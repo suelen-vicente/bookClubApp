@@ -32,9 +32,14 @@ class User{
         
     }
     
-//    init(username: String){
-//        //loads all the info from the database for the user
-//    }
+    func validateUsernameAndPassword() -> Bool{
+        if self.username == "sue" && self.password == "12345"{
+            print("Sue Logged in!")
+            return true
+        }
+        
+        return false
+    }
     
     func updateUsernameAndPassword(username: String, password: String){
         self.username = username

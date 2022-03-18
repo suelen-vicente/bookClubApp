@@ -38,19 +38,4 @@ class Rating{
         self.generalRating = (writingRating + plotRating + characterRating + endingRating)/4
     }
     
-//    func updateGeneralRating(generalRating: Int){
-//        self.generalRating = generalRating
-//        self.writingQualityRating = 0
-//        self.plotRating = 0
-//        self.characterRating = 0
-//        self.endingRating = 0
-//    }
-//    
-//    func updateSpecificRatings(writingRating: Int, plotRating: Int, characterRating: Int, endingRating: Int){
-//        self.writingQualityRating = writingRating
-//        self.plotRating = plotRating
-//        self.characterRating = characterRating
-//        self.endingRating = endingRating
-//        self.generalRating = Int((writingRating + plotRating + characterRating + endingRating)/4)
-//    }
 }
