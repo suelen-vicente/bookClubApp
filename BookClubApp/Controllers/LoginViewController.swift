@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
@@ -14,19 +15,26 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func touchUpinsideLoginButton(_ sender: Any) {
-        guard let username = usernameTextField.text,
-              !username.isEmpty,
+            guard let email = usernameTextField.text,
+              !email.isEmpty,
               let password = passwordTextField.text,
               !password.isEmpty else{
-                  createAlertControllerOKAction(message: "You must fill both username and password.")
+              createAlertControllerOKAction(message: "You must fill both username and password.")
                   return
               }
-        let user = User(username: username, password: password)
-        
-        if user.validateUsernameAndPassword(){
-            showMainView()
-        }else{
-            createAlertControllerOKAction(message: "Invalid Login! You're not Sue!")
+
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+          guard let strongSelf = self else { return }
+
+            if error == nil {
+                // Success
+                let user = User(username: email, password: password)
+                strongSelf.showMainView()
+            } else {
+                // Failure
+                strongSelf.createAlertControllerOKAction( message: error?.localizedDescription ?? "")
+            }
+
         }
     }
     

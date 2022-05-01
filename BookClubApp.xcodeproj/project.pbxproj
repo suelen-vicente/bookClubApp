@@ -38,6 +38,7 @@
 		2508F16427E3AEEF00467FDE /* BookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2508F16227E3AEEF00467FDE /* BookViewController.xib */; };
 		2508F16927E3C91F00467FDE /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2508F16727E3C91F00467FDE /* FriendTableViewCell.swift */; };
 		2508F16A27E3C91F00467FDE /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2508F16827E3C91F00467FDE /* FriendTableViewCell.xib */; };
+		25134DB9281EC22D009CD74D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25134DB8281EC22D009CD74D /* GoogleService-Info.plist */; };
 		95639BF6D69CB1CD653E65D3 /* Pods_BookClubAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6582112C15BD1F6FF38314C4 /* Pods_BookClubAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		2508F16227E3AEEF00467FDE /* BookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookViewController.xib; sourceTree = "<group>"; };
 		2508F16727E3C91F00467FDE /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		2508F16827E3C91F00467FDE /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
+		25134DB8281EC22D009CD74D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Book Club/bookClubApp/BookClubApp/Supporting Files/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		32AEB839CFB8B7EA689F184D /* Pods_BookClubApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookClubApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD398A510CADDB89779640F /* Pods-BookClubApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookClubApp.release.xcconfig"; path = "Target Support Files/Pods-BookClubApp/Pods-BookClubApp.release.xcconfig"; sourceTree = "<group>"; };
 		6582112C15BD1F6FF38314C4 /* Pods_BookClubAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookClubAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 				2508F10D27E223C800467FDE /* SceneDelegate.swift */,
 				2508F11427E223CA00467FDE /* Assets.xcassets */,
 				2508F11927E223CA00467FDE /* Info.plist */,
+				25134DB8281EC22D009CD74D /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -259,7 +262,6 @@
 				BE5D3051C7279BA0D3932C62 /* Pods-BookClubAppTests.debug.xcconfig */,
 				1BA7E24BD2140E6127E78F02 /* Pods-BookClubAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -355,6 +357,7 @@
 				2508F16A27E3C91F00467FDE /* FriendTableViewCell.xib in Resources */,
 				2508F15C27E3AAC700467FDE /* FriendsViewController.xib in Resources */,
 				2508F11327E223C800467FDE /* Main.storyboard in Resources */,
+				25134DB9281EC22D009CD74D /* GoogleService-Info.plist in Resources */,
 				2508F16427E3AEEF00467FDE /* BookViewController.xib in Resources */,
 				2508F15827E3AAB100467FDE /* SettingsViewController.xib in Resources */,
 			);

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegisterViewController: UITableViewController {
 
@@ -28,8 +29,30 @@ class RegisterViewController: UITableViewController {
     }
 
     @IBAction func touchUpInsideRegisterButton(_ sender: Any) {
-        if validUserInfo(){
-            showMainScreen()
+        guard let email = usernameTextField.text,
+              !email.isEmpty,
+              let password = firstPasswordTextField.text,
+              !password.isEmpty,
+              let confirmPassword = secondPasswordTextField.text,
+              !confirmPassword.isEmpty else{
+                  createAlertControllerOKAction(message: "All fields must be filled.")
+                  return
+              }
+
+        guard password == confirmPassword else{
+            createAlertControllerOKAction(message: "Passwords do not match!")
+            return
+        }
+
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] authResult, error in
+            guard let strongSelf = self else { return }
+            if error == nil {
+                // Success
+                strongSelf.showMainScreen()
+            } else {
+                // Failure
+                strongSelf.createAlertControllerOKAction(message: error?.localizedDescription ?? "")
+            }
         }
     }
     
