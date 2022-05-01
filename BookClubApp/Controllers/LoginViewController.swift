@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
               !email.isEmpty,
               let password = passwordTextField.text,
               !password.isEmpty else{
-              createAlertControllerOKAction(message: "You must fill both username and password.")
+                  showError(title: "Login Error", message: "You must fill both username and password.")
                   return
               }
 
@@ -29,10 +29,10 @@ class LoginViewController: UIViewController {
             if error == nil {
                 // Success
                 let user = User(username: email, password: password)
-                strongSelf.showMainView()
+                strongSelf.showMainScreen()
             } else {
                 // Failure
-                strongSelf.createAlertControllerOKAction( message: error?.localizedDescription ?? "")
+                strongSelf.showError(title: "Incorrect Login or password", message: error?.localizedDescription)
             }
 
         }
@@ -46,21 +46,6 @@ class LoginViewController: UIViewController {
         
         navVC.modalPresentationStyle = .fullScreen
         present(navVC, animated: true, completion: nil)
-    }
-    
-    func createAlertControllerOKAction(message: String){
-        let alertController = UIAlertController(title: "Attention!", message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
-
-        alertController.addAction(okAction)
-        
-        present(alertController, animated: true, completion: nil)
-    }
-    
-    func showMainView(){
-        let mainVC = MainViewController()
-        mainVC.modalPresentationStyle = .fullScreen
-        present(mainVC, animated: true, completion: nil)
     }
 
 }
