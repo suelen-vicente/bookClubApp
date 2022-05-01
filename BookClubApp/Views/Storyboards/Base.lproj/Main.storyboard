@@ -80,8 +80,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="m6O-ht-eOT" id="Iki-w9-b5C"/>
                         <outlet property="passwordTextField" destination="yWK-fy-XeG" id="2yp-Ds-Xec"/>
-                        <outlet property="usernameTextField" destination="m6O-ht-eOT" id="y9G-Mf-y69"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -110,14 +110,14 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="IlF-kB-alg">
                                                     <rect key="frame" x="20.5" y="4.5" width="373" height="34"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uX4-Od-0H6">
-                                                            <rect key="frame" x="0.0" y="0.0" width="78.5" height="34"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uX4-Od-0H6">
+                                                            <rect key="frame" x="0.0" y="0.0" width="41" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="highlightedColor" red="0.75294119120000003" green="0.49019610879999997" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wT6-DU-NNd">
-                                                            <rect key="frame" x="114.5" y="0.0" width="258.5" height="34"/>
+                                                            <rect key="frame" x="77" y="0.0" width="296" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
@@ -241,9 +241,9 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="emailTextField" destination="wT6-DU-NNd" id="w92-er-7lm"/>
                         <outlet property="firstPasswordTextField" destination="p4I-5h-Mty" id="YoP-0O-MAO"/>
                         <outlet property="secondPasswordTextField" destination="hsD-Oj-qJF" id="s7D-Xt-4WY"/>
-                        <outlet property="usernameTextField" destination="wT6-DU-NNd" id="rcj-3Y-SCI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6H1-nF-VKk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

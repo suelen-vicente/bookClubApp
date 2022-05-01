@@ -10,12 +10,12 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func touchUpinsideLoginButton(_ sender: Any) {
-            guard let email = usernameTextField.text,
+            guard let email = emailTextField.text,
               !email.isEmpty,
               let password = passwordTextField.text,
               !password.isEmpty else{

@@ -10,7 +10,7 @@ import FirebaseAuth
 
 class RegisterViewController: UITableViewController {
 
-    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var firstPasswordTextField: UITextField!
     
@@ -29,7 +29,7 @@ class RegisterViewController: UITableViewController {
     }
 
     @IBAction func touchUpInsideRegisterButton(_ sender: Any) {
-        guard let email = usernameTextField.text,
+        guard let email = emailTextField.text,
               !email.isEmpty,
               let password = firstPasswordTextField.text,
               !password.isEmpty,
