@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -96,7 +95,8 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="BUa-Om-TOr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
                             <tableViewSection id="CyE-WG-aPM">
                                 <cells>
@@ -113,10 +113,10 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uX4-Od-0H6">
                                                             <rect key="frame" x="0.0" y="0.0" width="78.5" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="highlightedColor" red="0.75294119120000003" green="0.49019610879999997" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wT6-DU-NNd">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wT6-DU-NNd">
                                                             <rect key="frame" x="114.5" y="0.0" width="258.5" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
@@ -131,6 +131,7 @@
                                                 <constraint firstItem="IlF-kB-alg" firstAttribute="width" secondItem="03a-Iq-Zdb" secondAttribute="width" multiplier="0.9" id="bwq-4a-rj2"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XqE-WB-eLP">
                                         <rect key="frame" x="0.0" y="87.5" width="414" height="43"/>
@@ -145,8 +146,8 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rst-kL-kdv">
                                                             <rect key="frame" x="0.0" y="0.0" width="78" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="highlightedColor" red="0.75294119120000003" green="0.49019610879999997" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p4I-5h-Mty">
                                                             <rect key="frame" x="114" y="0.0" width="259" height="34"/>
@@ -163,6 +164,7 @@
                                                 <constraint firstItem="abT-8c-wBD" firstAttribute="height" secondItem="E7d-Qs-pLn" secondAttribute="height" multiplier="0.8" id="bUg-bV-IXw"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="98s-y6-Bev">
                                         <rect key="frame" x="0.0" y="130.5" width="414" height="43"/>
@@ -177,8 +179,8 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QE7-gF-1QC">
                                                             <rect key="frame" x="0.0" y="0.0" width="78" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="highlightedColor" red="0.75294119120000003" green="0.49019610879999997" blue="0.44313728810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </label>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hsD-Oj-qJF">
                                                             <rect key="frame" x="114" y="0.0" width="259" height="34"/>
@@ -195,6 +197,7 @@
                                                 <constraint firstItem="NcU-DO-aMz" firstAttribute="height" secondItem="GZG-0O-RZX" secondAttribute="height" multiplier="0.8" id="ohL-OA-Cd4"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="oAn-Xy-TEm">
                                         <rect key="frame" x="0.0" y="173.5" width="414" height="39.5"/>
@@ -208,8 +211,11 @@
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dkk-qE-vfz">
                                                             <rect key="frame" x="0.0" y="0.0" width="373" height="31.5"/>
+                                                            <color key="tintColor" red="0.72941178080000002" green="0.69019609689999994" blue="0.58431375029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <state key="normal" title="Button"/>
-                                                            <buttonConfiguration key="configuration" style="filled" title="Register"/>
+                                                            <buttonConfiguration key="configuration" style="filled" title="Register">
+                                                                <color key="baseBackgroundColor" red="0.72941178080000002" green="0.69019609689999994" blue="0.58431375029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            </buttonConfiguration>
                                                             <connections>
                                                                 <action selector="touchUpInsideRegisterButton:" destination="Cfw-Fb-DIm" eventType="touchUpInside" id="cpF-AK-H80"/>
                                                             </connections>
@@ -224,6 +230,7 @@
                                                 <constraint firstItem="EI3-0p-ch3" firstAttribute="centerY" secondItem="Bb7-vu-fly" secondAttribute="centerY" id="wTw-r1-bAl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -246,8 +253,5 @@
     </scenes>
     <resources>
         <image name="LaunchIcon" width="360" height="360"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
