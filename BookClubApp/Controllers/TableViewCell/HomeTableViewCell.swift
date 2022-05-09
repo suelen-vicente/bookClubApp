@@ -27,8 +27,10 @@ class HomeTableViewCell: UITableViewCell {
         self.booksCollectionView.collectionViewLayout = flowLayout
         self.booksCollectionView.showsHorizontalScrollIndicator = false
         
-//        self.booksCollectionView.dataSource = self
-//        self.booksCollectionView.delegate = self
+        //Need to put those lines in here to inform the app that this is the view responsible
+        //for filling and configuring the collection view
+        self.booksCollectionView.dataSource = self
+        self.booksCollectionView.delegate = self
         
         // Register the xib for collection view cell
         let cellNib = UINib(nibName: "BookCollectionViewCell", bundle: nil)

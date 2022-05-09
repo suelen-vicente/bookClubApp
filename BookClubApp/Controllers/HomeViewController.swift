@@ -58,6 +58,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell") as? HomeTableViewCell {
+            
+            cell.cellDelegate = self
+            
             // Show SubCategory Title
             // Probably this will not be used
             let subCategoryTitle = colorsArray.objectsArray[indexPath.section].subcategory
@@ -67,8 +70,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             let rowArray = colorsArray.objectsArray[indexPath.section].colors[indexPath.row]
             cell.updateCellWith(row: rowArray)
             
-            cell.cellDelegate = self
-          
             return cell
         }
         return UITableViewCell()
