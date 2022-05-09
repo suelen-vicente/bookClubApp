@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookCollectionViewCell" id="gTV-IL-0wX" customClass="BookCollectionViewCell" customModule="BookClubApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="129" height="205"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="129" height="205"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ItStephenKing" translatesAutoresizingMaskIntoConstraints="NO" id="0gl-jH-nSm">
+                        <rect key="frame" x="0.0" y="0.0" width="129" height="143.5"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-sV-Msi">
+                        <rect key="frame" x="21.5" y="147.5" width="86.5" height="37.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uer-YE-rh6">
+                                <rect key="frame" x="38" y="0.0" width="10" height="37.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="0gl-jH-nSm" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.7" id="3rQ-5g-We0"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="0gl-jH-nSm" secondAttribute="top" constant="44" id="8fX-0u-t9l"/>
+                <constraint firstItem="0gl-jH-nSm" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="DBt-nV-V2n"/>
+                <constraint firstItem="0gl-jH-nSm" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="KAv-fX-HyQ"/>
+                <constraint firstItem="SF7-sV-Msi" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="MkY-vv-Dak"/>
+                <constraint firstItem="SF7-sV-Msi" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.232919" id="VGv-67-C1g"/>
+                <constraint firstItem="SF7-sV-Msi" firstAttribute="top" secondItem="0gl-jH-nSm" secondAttribute="bottom" constant="4" id="ZIL-wj-tGf"/>
+                <constraint firstItem="SF7-sV-Msi" firstAttribute="width" secondItem="ZTg-uK-7eu" secondAttribute="width" multiplier="0.670543" id="cZB-aJ-3p0"/>
+            </constraints>
+            <size key="customSize" width="129" height="205"/>
+            <connections>
+                <outlet property="bookCoverImageView" destination="0gl-jH-nSm" id="2Ja-3W-Tvw"/>
+                <outlet property="bookTitleLabel" destination="uer-YE-rh6" id="OuG-iC-jTt"/>
+            </connections>
+            <point key="canvasLocation" x="194.92753623188406" y="128.23660714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ItStephenKing" width="466.5" height="710.5"/>
+    </resources>
+</document>

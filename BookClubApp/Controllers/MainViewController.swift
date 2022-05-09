@@ -13,16 +13,16 @@ class MainViewController: UITabBarController {
         super.viewWillAppear(animated)
         
         let homeVC = UINavigationController(rootViewController: HomeViewController())
-        homeVC.tabBarItem = UITabBarItem(title: "Home", image: .actions, tag: 0)
+        homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "HomeIcon"), tag: 0)
         
         let shelfVC = UINavigationController(rootViewController: ShelfViewController())
-        shelfVC.tabBarItem = UITabBarItem(title: "Shelf", image: .add, tag: 1)
+        shelfVC.tabBarItem = UITabBarItem(title: "Books", image: UIImage(named: "BooksIcon"), tag: 1)
         
         let friendsVC = UINavigationController(rootViewController: FriendsViewController())
-        friendsVC.tabBarItem = UITabBarItem(title: "Friends", image: .checkmark, tag: 2)
+        friendsVC.tabBarItem = UITabBarItem(title: "Friends", image: UIImage(named: "FriendsIcon"), tag: 2)
         
         let settingsVC = SettingsViewController()
-        settingsVC.tabBarItem = UITabBarItem(title: "Settings", image: .remove, tag: 3)
+        settingsVC.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(named: "SettingsIcon"), tag: 3)
         
         viewControllers = [homeVC, shelfVC, friendsVC, settingsVC]
     }

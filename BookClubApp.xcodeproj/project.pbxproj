@@ -38,8 +38,15 @@
 		2508F16427E3AEEF00467FDE /* BookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2508F16227E3AEEF00467FDE /* BookViewController.xib */; };
 		2508F16927E3C91F00467FDE /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2508F16727E3C91F00467FDE /* FriendTableViewCell.swift */; };
 		2508F16A27E3C91F00467FDE /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2508F16827E3C91F00467FDE /* FriendTableViewCell.xib */; };
-		25134DB9281EC22D009CD74D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25134DB8281EC22D009CD74D /* GoogleService-Info.plist */; };
 		25134DBC281EC5DD009CD74D /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25134DBB281EC5DD009CD74D /* UIViewControllerExtensions.swift */; };
+		25134DBE281ED9A5009CD74D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25134DBD281ED9A5009CD74D /* GoogleService-Info.plist */; };
+		25134DC128203E60009CD74D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25134DBF28203E60009CD74D /* HomeTableViewCell.swift */; };
+		25134DC228203E60009CD74D /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25134DC028203E60009CD74D /* HomeTableViewCell.xib */; };
+		25134DC528203F98009CD74D /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25134DC328203F98009CD74D /* BookCollectionViewCell.swift */; };
+		25134DC628203F98009CD74D /* BookCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25134DC428203F98009CD74D /* BookCollectionViewCell.xib */; };
+		25134DC82822BD1D009CD74D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25134DC72822BD1D009CD74D /* Colors.swift */; };
+		25134DCA2822BEDE009CD74D /* BooksTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25134DC92822BEDE009CD74D /* BooksTableViewCellModel.swift */; };
+		25134DCC2822BF01009CD74D /* BookCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25134DCB2822BF01009CD74D /* BookCollectionViewCellModel.swift */; };
 		95639BF6D69CB1CD653E65D3 /* Pods_BookClubAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6582112C15BD1F6FF38314C4 /* Pods_BookClubAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,8 +95,15 @@
 		2508F16227E3AEEF00467FDE /* BookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookViewController.xib; sourceTree = "<group>"; };
 		2508F16727E3C91F00467FDE /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		2508F16827E3C91F00467FDE /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
-		25134DB8281EC22D009CD74D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Book Club/bookClubApp/BookClubApp/Supporting Files/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		25134DBB281EC5DD009CD74D /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		25134DBD281ED9A5009CD74D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		25134DBF28203E60009CD74D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		25134DC028203E60009CD74D /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		25134DC328203F98009CD74D /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		25134DC428203F98009CD74D /* BookCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCollectionViewCell.xib; sourceTree = "<group>"; };
+		25134DC72822BD1D009CD74D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		25134DC92822BEDE009CD74D /* BooksTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewCellModel.swift; sourceTree = "<group>"; };
+		25134DCB2822BF01009CD74D /* BookCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		32AEB839CFB8B7EA689F184D /* Pods_BookClubApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookClubApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD398A510CADDB89779640F /* Pods-BookClubApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookClubApp.release.xcconfig"; path = "Target Support Files/Pods-BookClubApp/Pods-BookClubApp.release.xcconfig"; sourceTree = "<group>"; };
 		6582112C15BD1F6FF38314C4 /* Pods_BookClubAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookClubAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +173,9 @@
 				2508F12C27E22AD600467FDE /* UserProfile.swift */,
 				2508F12E27E22B5400467FDE /* Rating.swift */,
 				2508F13027E2400500467FDE /* BookRating.swift */,
+				25134DC72822BD1D009CD74D /* Colors.swift */,
+				25134DC92822BEDE009CD74D /* BooksTableViewCellModel.swift */,
+				25134DCB2822BF01009CD74D /* BookCollectionViewCellModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,7 +213,7 @@
 				2508F10D27E223C800467FDE /* SceneDelegate.swift */,
 				2508F11427E223CA00467FDE /* Assets.xcassets */,
 				2508F11927E223CA00467FDE /* Info.plist */,
-				25134DB8281EC22D009CD74D /* GoogleService-Info.plist */,
+				25134DBD281ED9A5009CD74D /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -236,6 +253,8 @@
 			isa = PBXGroup;
 			children = (
 				2508F16827E3C91F00467FDE /* FriendTableViewCell.xib */,
+				25134DC028203E60009CD74D /* HomeTableViewCell.xib */,
+				25134DC428203F98009CD74D /* BookCollectionViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -243,6 +262,8 @@
 		2508F16F27E3CD1300467FDE /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				25134DC328203F98009CD74D /* BookCollectionViewCell.swift */,
+				25134DBF28203E60009CD74D /* HomeTableViewCell.swift */,
 				2508F16727E3C91F00467FDE /* FriendTableViewCell.swift */,
 			);
 			path = TableViewCell;
@@ -367,9 +388,11 @@
 				2508F16027E3AB0B00467FDE /* MainViewController.xib in Resources */,
 				2508F16A27E3C91F00467FDE /* FriendTableViewCell.xib in Resources */,
 				2508F15C27E3AAC700467FDE /* FriendsViewController.xib in Resources */,
+				25134DC628203F98009CD74D /* BookCollectionViewCell.xib in Resources */,
 				2508F11327E223C800467FDE /* Main.storyboard in Resources */,
-				25134DB9281EC22D009CD74D /* GoogleService-Info.plist in Resources */,
+				25134DBE281ED9A5009CD74D /* GoogleService-Info.plist in Resources */,
 				2508F16427E3AEEF00467FDE /* BookViewController.xib in Resources */,
+				25134DC228203E60009CD74D /* HomeTableViewCell.xib in Resources */,
 				2508F15827E3AAB100467FDE /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,11 +476,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2508F15B27E3AAC700467FDE /* FriendsViewController.swift in Sources */,
+				25134DC82822BD1D009CD74D /* Colors.swift in Sources */,
 				2508F12727E229A200467FDE /* Comment.swift in Sources */,
 				2508F14527E36F8700467FDE /* RegisterViewController.swift in Sources */,
 				2508F12527E2243F00467FDE /* Book.swift in Sources */,
+				25134DCC2822BF01009CD74D /* BookCollectionViewCellModel.swift in Sources */,
 				2508F12927E229E900467FDE /* User.swift in Sources */,
 				2508F11027E223C800467FDE /* LoginViewController.swift in Sources */,
+				25134DC128203E60009CD74D /* HomeTableViewCell.swift in Sources */,
 				2508F14F27E3AA2300467FDE /* ShelfViewController.swift in Sources */,
 				25134DBC281EC5DD009CD74D /* UIViewControllerExtensions.swift in Sources */,
 				2508F15F27E3AB0B00467FDE /* MainViewController.swift in Sources */,
@@ -467,8 +493,10 @@
 				2508F12F27E22B5400467FDE /* Rating.swift in Sources */,
 				2508F13127E2400500467FDE /* BookRating.swift in Sources */,
 				2508F10E27E223C800467FDE /* SceneDelegate.swift in Sources */,
+				25134DCA2822BEDE009CD74D /* BooksTableViewCellModel.swift in Sources */,
 				2508F12B27E22A4400467FDE /* Shelf.swift in Sources */,
 				2508F16327E3AEEF00467FDE /* BookViewController.swift in Sources */,
+				25134DC528203F98009CD74D /* BookCollectionViewCell.swift in Sources */,
 				2508F14B27E3A7B400467FDE /* HomeViewController.swift in Sources */,
 				2508F16927E3C91F00467FDE /* FriendTableViewCell.swift in Sources */,
 			);
